@@ -1,3 +1,7 @@
+body {
+    font-size: 15px;
+}
+
 .bl-background {
     background: #cdcbcb;
     padding: 20px;
@@ -16,27 +20,40 @@
     min-width: 700px;
 }
 
-.bl-add {
-    width: 98%;
+.bl-add-container {
+    width: inherit;
     height: 40px;
+    border-bottom: 1px solid #cdcdcd;
     padding: 10px;
 }
 
+.bl-add {
+    width: 95%;
+    margin: auto;
+}
+
 .add-buttons {
-    margin 0px;
-    padding 0px;
-    height: 5%;
+    margin: 0px;
+    padding: 10px;
 }
 
 .bl-add .title {
     display: inline-block;
-    width: 70%;
+    width: 80%;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #bcbcbc;
+    color: black;
 }
 
 .bl-add .submit {
     display: inline-block;
-    width: 10%;
-    position: fixed;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #bcbcbc;
+    margin-left: -5px;
+    background-color: dodgerblue;
+    color: snow;
+    font-weight: 600;
+    width: 15%;
 }
 
 .bl-bought {
@@ -48,8 +65,9 @@
 }
 
 .bl-row {
-    padding: 15px;
+    padding: 10px;
     border-bottom: 1px solid #cdcbcb;
+    line-height: 1.4em;
 }
 
 .bl-product {
@@ -79,6 +97,10 @@
     width: 33.33%
 }
 
+.inputs {
+    outline: 0 none !important;
+}
+
 /*Кнопки*/
 .bl-minus, .bl-plus {
     border-radius: 360px;
@@ -97,9 +119,7 @@
 .bl-label {
     display: inline-block;
     background: #cdcbcb;
-    padding:10px;
-    height: 10px;
-    width: 10px;
+    padding:8px 10px;
     border-radius:0.2em;
 }
 
