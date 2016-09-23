@@ -1,5 +1,6 @@
 body {
     font-size: 15px;
+    background: #cdcbcb;
 }
 
 .bl-background {
@@ -11,6 +12,46 @@ body {
     margin: auto;
 }
 
+.bl-bought {
+    background: white;
+    float:right;
+    width:280px;
+    padding:0px;
+    border-radius:5px;
+    box-shadow: 0px 0px 13px -5px rgba(0,0,0,0.75);
+}
+
+.bl-bought-element {
+    border-bottom: 1px solid #bcbcbc;
+    padding:10px;
+}
+
+.bl-title {
+    
+}
+
+.bought-items, .remained-items {
+    min-height: 20px;
+    padding: 15px;
+}
+
+.bl-bought-item {
+    display: inline-block;
+    background-color: #E8E8E8;  
+    padding: 5px;
+    margin: 1.5px;
+    border-radius: 5px;
+}
+
+.bl-item-counter {
+    padding: 2px 6.8px;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 360px;
+    background-color: #F2711C;
+    color: white;
+}
+
 .bl-list {
     background: white;
     margin-bottom: 200px;
@@ -19,6 +60,7 @@ body {
     max-width: 1000px;
     min-width: 700px;
     border-radius: 5px;
+    box-shadow: 0px 0px 13px -5px rgba(0,0,0,0.75);
 }
 
 .bl-add-container {
@@ -36,57 +78,67 @@ body {
 .add-buttons {
     margin: 0px;
     padding: 10px;
+    height: 100%;
 }
 
 .bl-add .title {
     display: inline-block;
+    box-sizing:border-box;
     width: 80%;
     border-radius: 5px 0px 0px 5px;
     border: 1px solid #bcbcbc;
+    border-right: none;
     color: black;
 }
 
 .bl-add .submit {
     display: inline-block;
+    box-sizing:border-box;
     border-radius: 0px 5px 5px 0px;
     border: 1px solid #bcbcbc;
+    border-left: none;
     margin-left: -5px;
     background-color: dodgerblue;
     color: snow;
     font-weight: 600;
-    width: 15%;
+    width: 20%;
 }
 
-.bl-bought {
-    background: white;
-    float:right;
-    width:250px;
-    padding:10px;
-    border-radius:5px;
+.bl-add .submit:hover {
+    background-color: blue;
+}
+
+.bl-add .submit:active {
+    background-color: mediumblue;
 }
 
 .bl-row {
     border-bottom: 1px solid #cdcbcb;
-    height: 30px;
+    height: 40px;
     padding: 10px;
-}
-
-.bl-row-container {
-    margin: 0 20px;
 }
 
 .bl-product, .bl-count, .bl-list-buttons {
     display: inline-block;
-    width: 31%;
+    box-sizing: border-box;
+    width: 33%;
     height: 100%;
+    top: 50%;
 }
 
 .bl-product {
-    padding: 0px;
+    padding: 10px;
 }
 
 .bl-count {
     padding: 0px;
+    margin: 0px auto;
+}
+
+.bl-list-buttons-block {
+    float: right;
+    margin: 0px;
+    height: inherit;
 }
 
 .bl-list-buttons {
@@ -94,18 +146,11 @@ body {
     height: 100%;
 }
 
-.bl-list-buttons-block{
-    float: right;
-    margin: 0px;
-    height: inherit;
-}
-
 .bl-list-buttons .cancelled {
     background-color:#DB2828;
-    border: 0px none !important;
     border-radius: 5px;
     margin-right: 5px;
-    padding:8px 11px;
+    padding:9px 12px;
 }
 
 .bl-list-buttons .cancelled:hover {
@@ -117,14 +162,10 @@ body {
 }
 
 .bl-list-buttons .buyed {
-    background-color: #fefefe;
-    border-bottom: 2px solid #bcbcbc;
-    border-left: 1px solid #bcbcbc;
-    border-right: 1px solid #bcbcbc;
-    border-top: 1px solid #bcbcbc;
+    background-color: #F8F8F8;
     border-radius: 5px;
-    margin-right: 5px;
-    padding:8px 30px;
+    margin-right: 8px;
+    padding:9px 40px;
 }
 
 .bl-list-buttons .buyed:hover {
@@ -135,32 +176,74 @@ body {
     background-color: #808080;
 }
 
-.inputs {
-    outline: 0px none !important;
+/* styles for already bought items */
+.bl-already-buyed-row .bl-product{
+    text-decoration: line-through;
+}
+
+.bl-already-buyed-row .bl-count button {
+    visibility: hidden;
+}
+
+.bl-already-buyed-row .bl-list-buttons-block {
+    display: none;
+}
+
+.bl-already-buyed-row .rebuy {
+    display: inline-block;
+    float: right;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding:9px 40px;
 }
 
 /*Кнопки*/
+.inputs {
+    border-bottom: 2.5px solid #bcbcbc;
+    border-left: 0.5px solid #bcbcbc;
+    border-right: 0.5px solid #bcbcbc;
+    border-top: 0.5px solid #bcbcbc;
+    outline: 0px none !important;
+}
+
 .bl-minus, .bl-plus {
     border-radius: 360px;
     width: 30px;
     height: 30px;
-    border: solid 0px;
     display: inline-block;
     font-family: Icons;
     font-weight: 400px;
 }
 
 .bl-minus {
+    background: #FF2828;
+}
+
+.bl-minus:hover {
+    background: #EB2828;
+}
+
+.bl-minus:active {
     background: #DB2828;
 }
 
 .bl-label {
     display: inline-block;
     background: #cdcbcb;
-    padding:8px 10px;
+    padding:5px 10px;
+    margin: 5px;
     border-radius:0.2em;
 }
 
 .bl-plus {
     background: #04a613;
+}
+
+.bl-plus:hover {
+    background: #049013;
+}
+
+.bl-plus:active {
+    background: #046012;
 }
