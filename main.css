@@ -162,18 +162,18 @@ body {
 }
 
 .bl-list-buttons .buyed {
-    background-color: #F8F8F8;
+    background-color: whitesmoke;
     border-radius: 5px;
     margin-right: 8px;
     padding:9px 40px;
 }
 
 .bl-list-buttons .buyed:hover {
-    background-color: #a0a0a0;
+    background-color: lightgrey;
 }
 
 .bl-list-buttons .buyed:active {
-    background-color: #808080;
+    background-color: darkgrey;
 }
 
 /* styles for already bought items */
@@ -196,6 +196,14 @@ body {
     border-radius: 5px;
     margin-right: 5px;
     padding:9px 40px;
+}
+
+.bl-already-buyed-row .rebuy:hover {
+    background-color: lightgrey;
+}
+
+.bl-already-buyed-row .rebuy:active {
+    background-color: darkgrey;
 }
 
 /*Кнопки*/
