@@ -213,8 +213,20 @@ body {
     border-right: 0.5px solid #bcbcbc;
     border-top: 0.5px solid #bcbcbc;
     outline: 0px none !important;
+    position: relative;
+    /*transition: all 1s ease;*/
 }
-
+/*
+.inputs:hover::after {
+    position: absolute;
+    display: block;
+    content: attr(class);
+    width:40px;
+    height:40px;
+    bottom: -30px;
+    background-color: blue;
+}
+*/
 .bl-minus, .bl-plus {
     border-radius: 360px;
     width: 30px;
@@ -254,4 +266,40 @@ body {
 
 .bl-plus:active {
     background: #046012;
+}
+
+/* badge styles */
+.badge {
+    position: fixed;
+    bottom: -80px;
+    left: 30px;
+    color:white;
+    background-color: darkviolet;
+    font-size: 20px;
+    font-weight: 700;
+    padding:20px;
+    border-radius: 10px 10px 0px 0px;
+    transition: all 700ms ease;
+}
+
+.badge:hover {
+    bottom: 0px;
+    background-color: forestgreen;
+}
+
+.student-name {
+    margin-bottom:30px;
+}
+
+@media print {
+    .badge {
+        background-color: white;
+        border: 1px solid #000000;
+        color: black;
+        font-weight: 600;
+    }
+    
+    .student-name {
+        display: none;
+    }
 }
