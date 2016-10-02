@@ -23,7 +23,7 @@
         <div class="bl-add-container">
             <div class="bl-add">
                 <input type="text" placeholder="Назва товару" class="title add-buttons inputs">
-                <button class="submit add-buttons inputs">Додати</button>
+                <button class="submit add-buttons  inputs" data-tooltip="Add to cart">Додати</button>
             </div>
         </div>
         <!-- Tomat -->
@@ -32,14 +32,17 @@
                 Помідори
             </span>
             <span class="bl-count">
-                <button class="bl-minus inputs">-</button>
+                <button class="bl-minus inputs" data-tooltip="Decrease amount">-</button>
                 <span class="bl-label">3</span>
-                <button class="bl-plus inputs">+</button>
+                <button class="bl-plus inputs" data-tooltip="Increase amount">+</button>
             </span>
             <span class="bl-list-buttons">
                 <div class="bl-list-buttons-block">
-                    <button class="buyed inputs">Куплено</button>
-                    <button class="cancelled inputs">X</button>
+                    <button class="buyed inputs" data-tooltip="Set as bought">Куплено</button>
+                    <button class="cancelled inputs" data-tooltip="Remove from list" >X</button>
+                </div>
+                <div class="bl-already-buyed-button">
+                    <button class="rebuy inputs">Не куплено</button>
                 </div>
             </span>
         </div>
@@ -78,7 +81,7 @@
             </span>
         </div>
         
-        <div class="bl-row bl-already-buyed-row">
+        <div class="bl-row  bl-already-buyed-row">
             <span class="bl-product">
                 Кавуни
             </span>
