@@ -46,40 +46,28 @@
                 </div>
             </span>
         </div>
-        <!-- Milk -->
-        <div class="bl-row">
+	
+	<div class="bl-row">
             <span class="bl-product">
                 Молоко
             </span>
             <span class="bl-count">
-                <button class="bl-minus inputs">-</button>
+                <button class="bl-minus inputs" data-tooltip="Decrease amount">-</button>
                 <span class="bl-label">3</span>
-                <button class="bl-plus inputs">+</button>
+                <button class="bl-plus inputs" data-tooltip="Increase amount">+</button>
             </span>
             <span class="bl-list-buttons">
                 <div class="bl-list-buttons-block">
-                    <button class="buyed inputs">Куплено</button>
-                    <button class="cancelled inputs">X</button>
+                    <button class="buyed inputs" data-tooltip="Set as bought">Куплено</button>
+                    <button class="cancelled inputs" data-tooltip="Remove from list" >X</button>
+                </div>
+                <div class="bl-already-buyed-button">
+                    <button class="rebuy inputs">Не куплено</button>
                 </div>
             </span>
         </div>
-        
-        <div class="bl-row">
-            <span class="bl-product">
-                Огірки
-            </span>
-            <span class="bl-count">
-                <button class="bl-minus inputs">-</button>
-                <span class="bl-label">3</span>
-                <button class="bl-plus inputs">+</button>
-            </span>
-            <span class="bl-list-buttons">
-                <div class="bl-list-buttons-block">
-                    <button class="buyed inputs">Куплено</button>
-                    <button class="cancelled inputs">X</button>
-                </div>
-            </span>
-        </div>
+
+        <!-- Milk -->
         
         <div class="bl-row  bl-already-buyed-row">
             <span class="bl-product">
@@ -96,7 +84,7 @@
                     <button class="cancelled inputs">X</button>
                 </div>
                 <div class="bl-already-buyed-button">
-                    <button class="rebuy inputs">Не куплено</button>
+                    <button class="rebuy inputs" data-tooltip="Set as not buyed">Не куплено</button>
                 </div>
             </span>
         </div>
