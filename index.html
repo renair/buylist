@@ -10,13 +10,11 @@
     <div class="bl-bought">
         <div class="bl-title bl-bought-element"><h3>Залишилося</h3></div>
         <div class="remained-items bl-bought-element">
-            <span class="bl-bought-item">Помідори<span class="bl-item-counter">1</span></span>
-            <span class="bl-bought-item">Молоко<span class="bl-item-counter">1</span></span>
-            <span class="bl-bought-item">Огірки<span class="bl-item-counter">1</span></span>
+            <!-- List about elements -->
         </div>
         <div class="bl-title bl-bought-element"><h3>Куплене</h3></div>
         <div class="bought-items bl-bought-element">
-            <span class="bl-bought-item">Кавуни<span class="bl-item-counter">1</span></span>
+            <!-- already bought elements -->
         </div>
     </div>
     <div class="bl-list">
@@ -26,46 +24,8 @@
                 <button class="submit add-buttons inputs" data-tooltip="Add to cart">Додати</button>
             </div>
         </div>
-        <!-- Tomat -->
-        <div class="bl-row">
-            <span class="bl-product">
-                Помідори
-            </span>
-            <span class="bl-count">
-                <button class="bl-minus inputs" data-tooltip="Decrease amount">-</button>
-                <span class="bl-label">3</span>
-                <button class="bl-plus inputs" data-tooltip="Increase amount">+</button>
-            </span>
-            <span class="bl-list-buttons">
-                <div class="bl-list-buttons-block">
-                    <button class="buyed inputs" data-tooltip="Set as bought">Куплено</button>
-                    <button class="cancelled inputs" data-tooltip="Remove from list" >X</button>
-                </div>
-                <div class="bl-already-buyed-button">
-                    <button class="rebuy inputs">Не куплено</button>
-                </div>
-            </span>
-        </div>
-	
-	<div class="bl-row">
-            <span class="bl-product">
-                Молоко
-            </span>
-            <span class="bl-count">
-                <button class="bl-minus inputs" data-tooltip="Decrease amount">-</button>
-                <span class="bl-label">3</span>
-                <button class="bl-plus inputs" data-tooltip="Increase amount">+</button>
-            </span>
-            <span class="bl-list-buttons">
-                <div class="bl-list-buttons-block">
-                    <button class="buyed inputs" data-tooltip="Set as bought">Куплено</button>
-                    <button class="cancelled inputs" data-tooltip="Remove from list" >X</button>
-                </div>
-                <div class="bl-already-buyed-button">
-                    <button class="rebuy inputs">Не куплено</button>
-                </div>
-            </span>
-        </div>
+        <!-- Hear will be content -->
+        <!-- Finish of content -->
     </div>
 </div>
 <div class="badge">
@@ -74,12 +34,12 @@
 </div>
 <div class="hidden-objects-row">
 	<div class="bl-row">
-        <span class="bl-product">
+        <span class="bl-product" contenteditable>
             Кавуни
         </span>
         <span class="bl-count">
             <button class="bl-minus inputs">-</button>
-            <span class="bl-label">3</span>
+            <span class="bl-label">1</span>
             <button class="bl-plus inputs">+</button>
         </span>
         <span class="bl-list-buttons">
@@ -92,6 +52,9 @@
             </div>
         </span>
     </div>
+</div>
+<div class="hidden-objects-left">
+    <span class="bl-bought-item"><span class="item-name">Огірки</span><span class="bl-item-counter">1</span></span>
 </div>
 <script src="jq.js"></script>
 <script src="main.js"></script>
