@@ -206,6 +206,10 @@ body {
     padding:9px 40px;
 }
 
+.hidden-objects-row {
+	display: none;
+}
+
 .rebuy:hover {
     background-color: lightgrey;
 }
